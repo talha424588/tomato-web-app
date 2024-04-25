@@ -10,10 +10,10 @@ function Navbar() {
       <div className="navbar">
         <img src={logo} alt="logo" className="logo" />
         <ul className="navbar-menu">
-          <li onClick={()=>setActiveNav("#")} className={activeNav === "#" ? "active":""}>Home</li>
-          <li onClick={()=>setActiveNav("menu")} className={activeNav === "menu" ? "active" :""}>Menu</li>
-          <li onClick={()=>setActiveNav("mobile-app")} className={activeNav === "mobile-app" ? "active" : ""}>Mobile App</li>
-          <li onClick={()=>setActiveNav("contact-us")} className={activeNav=== "contact-us" ? "active" : ""}>Contact Us</li>
+          <li onClick={()=>setActiveNav("#")} className={activeNav === "#" ? "active":""}>home</li>
+          <li onClick={()=>setActiveNav("menu")} className={activeNav === "menu" ? "active" :""}>menu</li>
+          <li onClick={()=>setActiveNav("mobile-app")} className={activeNav === "mobile-app" ? "active" : ""}>mobile-app</li>
+          <li onClick={()=>setActiveNav("contact-us")} className={activeNav=== "contact-us" ? "active" : ""}>contact us</li>
         </ul>
         <div className="navbar-right">
           <img src={search_icon} alt="" />

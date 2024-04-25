@@ -20,3 +20,22 @@ a
   width: 80%;
   margin: auto;
 }
+@keyframes headerImageSlide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
