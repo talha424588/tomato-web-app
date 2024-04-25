@@ -7,7 +7,7 @@
     position: relative;
     background-repeat: no-repeat;
     /* animation: headerImageSlide 2s; */
-    animation: headerImageSlide 2s forwards;
+    /* animation: headerImageSlide 2s forwards; */
 }
 .header-contents
 {
@@ -19,9 +19,9 @@
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
-    /* animation: fadeIn 3s; */
-    opacity: 0; /* Initial state for fadeIn animation */
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 3s;
+    /* opacity: 0;  */
+    /* animation: fadeIn 3s forwards; */
 }
 .header-contents h2{
     color: white;;

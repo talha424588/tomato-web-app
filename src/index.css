@@ -29,7 +29,7 @@ a
   }
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
     filter: blur(100px);
@@ -37,5 +37,14 @@ a
   100% {
     opacity: 1;
     filter: blur(0);
+  }
+} */
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
