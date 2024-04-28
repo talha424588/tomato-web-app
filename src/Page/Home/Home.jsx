@@ -4,13 +4,13 @@ import Menu from '../../Components/Menu/Menu';
 import './Home.css'
 function Home()
 {
-    const [categroy, setCategory] = useState("all");
-    console.log("category",categroy);
+    const [category, setCategory] = useState("all");
+    console.log("category",category);
 
     return (
         <>
         <Header></Header>
-        <Menu categroy={categroy} setCategory={setCategory}/>
+        <Menu category={category} setCategory={setCategory}/>
         </>
     )
 }

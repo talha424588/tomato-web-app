@@ -1,6 +1,7 @@
 import "./Menu.css";
 import { menu_list } from "../../Assets/assets";
-function Menu({ categrory, setCategory }) {
+function Menu({ category, setCategory }) {
+  console.log("category",category);
   return (
     <>
       <div className="explore-menu" id="explore-menu">
@@ -13,7 +14,7 @@ function Menu({ categrory, setCategory }) {
         <div className="explore-menu-list">
           {menu_list.map((item, index) => (
             <div onClick={()=>setCategory(prev => prev === item.menu_name? "all" : item.menu_name)} key={index} className="explore-menu-list-item">
-              <img className={categrory === item.menu_name? "active":""} src={item.menu_image} alt="menu" />
+              <img className={category === item.menu_name? "active":""} src={item.menu_image} alt="menu" />
               <p>{item.menu_name}</p>
             </div>
           ))}
