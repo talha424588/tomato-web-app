@@ -1,7 +1,6 @@
 import "./Menu.css";
 import { menu_list } from "../../Assets/assets";
 function Menu({ category, setCategory }) {
-  console.log("category",category);
   return (
     <>
       <div className="explore-menu" id="explore-menu">
