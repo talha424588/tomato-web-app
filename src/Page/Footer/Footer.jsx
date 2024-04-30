@@ -9,9 +9,9 @@ function Footer() {
             <img src={assets.logo} alt="" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nulla accusamus sunt! Inventore numquam saepe quod non ab nesciunt, explicabo omnis necessitatibus quia voluptate magni temporibus nostrum laboriosam. Consequatur, facilis.</p>
             <div className="footer-social-icons">
-                <img src={assets.facebook} alt="" />
-                <img src={assets.twitter} alt="" />
-                <img src={assets.instagram} alt="" />
+                <img src={assets.facebook_icon} alt="" />
+                <img src={assets.twitter_icon} alt="" />
+                <img src={assets.linkedin_icon} alt="" />
             </div>
           </div>
           <div className="footer-content-center">
@@ -22,6 +22,7 @@ function Footer() {
             <li>Privacy Policy</li>
           </div>
           <div className="footer-content-right">
+          <h2>ET IN TOUCH</h2>
             <ul>
               <li>+1-123-123-123</li>
               <li>contact@gmail.com</li>
