@@ -13,7 +13,7 @@ function FoodDsiplay({props})
                 <div className="food-display-item">
                     {
                         food_list.map((item, index) => {
-                            return <FoodItem id={item.id} name={item.name} description={item.description} image={item.image}></FoodItem>
+                            return <FoodItem id={item.id} name={item.name} description={item.description} image={item.image} price={item.price}></FoodItem>
                         })};
                 </div>
             </div>
