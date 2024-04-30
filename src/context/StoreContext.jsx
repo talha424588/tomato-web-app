@@ -33,7 +33,6 @@ const  StoreContextProvier = (props) =>
 
     useEffect(()=>
     {
-        console.log('cart items added',cartItems);
     },[cartItems]);
 
     return(

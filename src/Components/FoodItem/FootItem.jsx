@@ -4,7 +4,6 @@ import { useContext, useState } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 function FoodItem({id,name,description,image,price})
 {
-    //console.log("food item",id,name,description,image,price);
     const {cartItems,addToCart,removeFromCart} = useContext(StoreContext);
     return (
         <>
