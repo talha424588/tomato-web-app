@@ -12,8 +12,20 @@ function Menu({ category, setCategory }) {
         </p>
         <div className="explore-menu-list">
           {menu_list.map((item, index) => (
-            <div onClick={()=>setCategory(prev => prev === item.menu_name? "all" : item.menu_name)} key={index} className="explore-menu-list-item">
-              <img className={category === item.menu_name? "active":""} src={item.menu_image} alt="menu" />
+            <div
+              onClick={() =>
+                setCategory((prev) =>
+                  prev === item.menu_name ? "all" : item.menu_name
+                )
+              }
+              key={index}
+              className="explore-menu-list-item"
+            >
+              <img
+                className={category === item.menu_name ? "active" : ""}
+                src={item.menu_image}
+                alt="menu"
+              />
               <p>{item.menu_name}</p>
             </div>
           ))}

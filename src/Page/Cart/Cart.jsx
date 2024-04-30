@@ -1,9 +1,5 @@
-import "./Cart.css"
-function Cart()
-{
-    return (
-        <>
-        </>
-    )
+import "./Cart.css";
+function Cart() {
+  return <></>;
 }
 export default Cart;

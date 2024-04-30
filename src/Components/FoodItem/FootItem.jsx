@@ -1,6 +1,6 @@
 import './FoodItem.css'
 import { assets } from '../../Assets/assets';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 function FoodItem({id,name,description,image,price})
 {
