@@ -64,3 +64,44 @@
     background-color: tomato;
     position: absolute;
 }
+
+@media (max-width: 1024px) {
+    .navbar .logo
+    {
+        width: 120px;;
+    }
+    .navbar-menu
+    {
+        gap: 15px;
+        font-size: 15px;;
+    }
+    .navbar-right img
+    {
+        width: 20px;
+    }
+    .navbar-right button
+    {
+        padding: 7px 20px;;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar .logo
+    {
+        width: 120px;;
+    }
+    .navbar-menu
+    {
+        display: none  ;
+    }
+    .navbar-right img
+    {
+        width: 20px;
+    }
+    .navbar-right button
+    {
+        padding: 7px 20px;;
+        font-size: 15px;
+    }
+}
