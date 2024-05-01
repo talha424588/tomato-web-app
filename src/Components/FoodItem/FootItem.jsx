@@ -1,4 +1,4 @@
-import './FoodItem.css'
+import './FoodItem.css';
 import { assets } from '../../Assets/assets';
 import { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';

@@ -23,7 +23,7 @@ function FoodDsiplay({ category }) {
               );
             }
           })}
-          ;
+          
         </div>
       </div>
     </>
