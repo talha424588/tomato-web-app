@@ -3,6 +3,7 @@ import search_icon from "../../Assets/search_icon.png";
 import basket_icon from "../../Assets/basket_icon.png";
 import "../Navbar/Navbar.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [activeNav, setActiveNav] = useState("#");
   return (
@@ -10,30 +11,30 @@ function Navbar() {
       <div className="navbar">
         <img src={logo} alt="logo" className="logo" />
         <ul className="navbar-menu">
-          <li
+          <Link to="/"
             onClick={() => setActiveNav("#")}
             className={activeNav === "#" ? "active" : ""}
           >
             home
-          </li>
-          <li
+          </Link>
+          <a href="#explore-menu"
             onClick={() => setActiveNav("menu")}
             className={activeNav === "menu" ? "active" : ""}
           >
             menu
-          </li>
-          <li
+          </a>
+          <a href="#app-download"
             onClick={() => setActiveNav("mobile-app")}
             className={activeNav === "mobile-app" ? "active" : ""}
           >
             mobile-app
-          </li>
-          <li
+          </a>
+          <a href="#footer"
             onClick={() => setActiveNav("contact-us")}
             className={activeNav === "contact-us" ? "active" : ""}
           >
             contact us
-          </li>
+          </a>
         </ul>
         <div className="navbar-right">
           <img src={search_icon} alt="" />
