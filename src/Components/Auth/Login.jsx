@@ -10,7 +10,7 @@ function Login({setShowLogin}) {
           <div className="login-popup-title"><h2>{currentState}</h2>
             <img src={assets.cross_icon} onClick={()=>setShowLogin(false)} alt="" />
           </div>
-          <div className="login-input-popups">
+          <div className="login-popup-input">
             {currentState === "login" ? <></>:<input type="text" placeholder="your name" required />}
             
             <input type="email" placeholder="your email" required />
@@ -23,9 +23,9 @@ function Login({setShowLogin}) {
           </div>
           {
             currentState === "login"? (
-              <p onClick={()=>setCurrentState("sign up")}>create new account ?</p>
+              <p onClick={()=>setCurrentState("sign up")}>create new account? <span>Register Here</span></p>
             ) : (
-              <p onClick={()=>setCurrentState("login")}>already have an account ?</p>
+              <p onClick={()=>setCurrentState("login")}>already have an account? <span>Login here</span></p>
             )
           }
           
