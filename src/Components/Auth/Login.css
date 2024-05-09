@@ -46,7 +46,7 @@
     padding: 10px;
 }
 
-.login-popup-input button {
+.btn {
     border: none;
     background-color: tomato;
     color: white;

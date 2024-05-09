@@ -1,7 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Login.css";
 import { assets } from '../../Assets/assets';
 function Login({setShowLogin}) {
+
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+
+  useEffect(()=>
+  {
+    // fetch(`http://127.0.0.1:8000/api/auth/register`,{
+    //   method:"POST",
+    //   headers:{
+    //     "content-type": "application/json",
+    //     "accept": "application/json"
+    //   },
+    // })
+    register();
+  });
+  function register()
+  {
+    const data = {name:name,email:email,password:password}
+    console.log("register",data);
+  }
+  function login()
+  {
+    const data = {email:email,password:password}
+    console.log("login",data);
+  }
   const [currentState, setCurrentState] = useState("login");
   return (
     <>
@@ -16,7 +42,7 @@ function Login({setShowLogin}) {
             <input type="email" placeholder="your email" required />
             <input type="text" placeholder="password" required />
           </div>
-          <button>{currentState === "sign up" ? "create account" : "login"}</button>
+          <button className="btn" onClick={currentState === "register" ? register: login}>{currentState === "register" ? "create account" : "login"}</button>
           <div className="login-popup-condition">
             <input type="checkbox" required/>
             <p>By coutinuing i am agreeing to term and policy </p>
